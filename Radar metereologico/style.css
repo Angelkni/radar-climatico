@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #060913;
+    background-image: 
+        radial-gradient(circle at 15% 20%, rgba(0, 195, 255, 0.18) 0%, transparent 45%),
+        radial-gradient(circle at 85% 80%, rgba(0, 102, 255, 0.15) 0%, transparent 45%);
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    background: linear-gradient(90deg, #00f0ff, #0077ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 14px rgba(0, 240, 255, 0.45));
+}
+
+.subtitle {
+    color: #94a3b8;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+select {
+    width: 260px;
+    padding: 12px 15px;
+    font-size: 15px;
+    color: #f8fafc;
+    background-color: rgba(10, 15, 30, 0.9);
+    border: 2px solid #00f0ff;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(0, 240, 255, 0.25);
+}
+
+select option {
+    background-color: #090d1a;
+}
+
+button {
+    padding: 12px 22px;
+    background: linear-gradient(135deg, #00f0ff 0%, #0066ff 100%);
+    color: #060913;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 18px rgba(0, 240, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.85);
+}
+
+.hidden {
+    display: none;
+}
+
+#loading {
+    color: #00f0ff;
+    font-weight: 600;
+    margin: 20px 0;
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.7);
+}
+
+#errorMsg {
+    background-color: rgba(0, 240, 255, 0.1);
+    color: #70d6ff;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1.5px solid #00f0ff;
+    margin-top: 15px;
+}
+
+.weather-card {
+    background: rgba(10, 15, 30, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 14px;
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.25);
+    margin-top: 20px;
+    text-align: left;
+}
+
+.weather-card h2 {
+    color: #00f0ff;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.5);
+}
+
+.weather-card p {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #e2e8f0;
+}
+
+.weather-card strong {
+    color: #70d6ff;
+    text-shadow: 0 0 6px rgba(112, 214, 255, 0.5);
+}
